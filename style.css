@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    z-index: 1;
+}
+
+header .logo a {
+    font-size: 30px;
+    color: white;
+    padding: 15px 30px;
+}
+
+header .logo a span {
+    color: orange;
+
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li a {
+    margin: 5px 20px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 10px;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Content */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #885f43;
+}
+
+.content h2 {
+    font-size: 32px;
+    padding: 5px;
+    color: white;
+}
+
+.content p {
+    font-size: 22px;
+    color: white;
+}
+
+/*Menu*/
+
+.menu {
+    background-color: #333333;
+    width: 100%;
+}
+
+.menu .menu-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-header h3 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.menu-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.menu .menu-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+
+.menu .menu-content .coffee-based,
+.non-coffee,
+.Frappe {
+    width: 300px;
+}
+
+.menu .menu-content .coffee-based-image img {
+    border-radius: 200%;
+    height: 280px;
+    width: 320px;
+}
+
+.menu .menu-content .non-coffee .non-coffee-image img {
+    border-radius: 50%;
+    height: 280px;
+    width: 320px;
+}
+
+.menu .menu-content .Frappe .Frappe-image img {
+    border-radius: 50%;
+    height: 280px;
+    width: 320px;
+}
+
+.menu .menu-content .coffee-based-body,
+.non-coffee-body,
+.Frappe-body {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu .menu-content .coffee-based-body h2,
+.non-coffee-body h2,
+.Frappe-body h2 {
+    color: orange;
+}
+
+.menu .menu-content .coffee-based-body label,
+.non-coffee-body label,
+.Frappe-body label {
+    margin-top: 10px;
+    color: white;
+}
+
+/*Shop*/
+
+.shop {
+    background-color: #333333;
+    width: 100%;
+}
+
+.shop .Shop-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-content {
+    background-color: #404040;
+}
+
+.Shop-header h3 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.Shop-header h4 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+#shop_row {
+    display: flex;
+    padding: 0 150px 0 150px;
+}
+
+#shop_col {
+    box-shadow: 2px 2px 2px #333333;
+    border: 3px solid #3C2F2F;
+    background-color: #6F4436;
+    margin: 5px;
+    padding: 1px;
+    flex: 1;
+}
+
+#shop_col h2 {
+    background-color: #363636;
+    color: orange;
+    text-align: center;
+    padding: 5px;
+}
+
+#image {
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 5px;
+    border: 2px solid #885f43;
+}
+
+#image img {
+    width: 100%;
+    height: 100%;
+    border: 50%;
+    object-fit: cover;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+}
+
+#shop_col h5 {
+    color: orange;
+    text-align: center;
+    padding: 5px;
+}
+
+#image-food img {
+    width: 100%;
+    height: 100%;
+    border: 90%;
+    object-fit: cover;
+}
+
+#image-food {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    padding: 3px;
+    border: 3px solid #885f43;
+}
+
+/*About and Info*/
+.about {
+    background-color: #404040;
+    border-top: 2px solid #333333;
+    padding: 20px;
+}
+
+.about .About-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.About-header h3 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.about-content {
+    background-color: #404040;
+}
+
+.about-image img {
+    width: 800px;
+    height: 200px;
+    display: block;
+}
+
+.about-texts {
+    vertical-align: absolute;
+    Z-index: -1px;
+    text-align: center;
+    height: 170px;
+    width: 630px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 650px;
+    border-style: groove;
+    border-color: #885f43;
+    overflow: auto;
+}
+
+
+/*History and contacts below*/
+
+.history {
+    background-color: #404040;
+    border-top: 2px solid #333333;
+    padding: 20px;
+}
+
+.history .history-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history-header h3 {
+    color: orange;
+    padding: 10px 20px;
+}
+
+.history-content {
+    background-color: #404040;
+}
+
+.Owners {
+    width: 400px;
+    height: 470px;
+    border: 80%;
+    object-fit: cover;
+}
+
+.Owners img {
+    width: 320px;
+    height: 430px;
+    border-radius: 10px;
+    padding: 3px;
+    border: 2px solid #885f43;
+    margin-top: 20px;
+    margin-left: 760px;
+}
+
+.history-content h3 {
+    color: white;
+    padding: 10px;
+}
+
+.history-content h4 p {
+    vertical-align: absolute;
+    Z-index: -1px;
+    text-align: center;
+    height: 150px;
+    width: 560px;
+    color: white;
+    margin-top: 0px;
+    margin-left: 650px;
+    border-style: groove;
+    border-color: #885f43;
+    overflow: auto;
+
+}
+
+/*footer*/
+
+.footer {
+    background-color: #333333;
+    padding: 5px;
+}
+
+.footer .footer-box .social-media a {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer-box .social-media a:hover {
+    opacity: .7;
+}
+
+.footer h5 {    
+    justify-content: right;
+    text-align: right;
+    color: whitesmoke;
+    font-style: italic;
+}
